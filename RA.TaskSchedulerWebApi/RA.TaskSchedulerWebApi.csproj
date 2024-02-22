@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.59" />
+    <PackageReference Include="Quartz.AspNetCore" Version="3.8.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RA.DataAccess\RA.DataAccess.csproj" />
+    <ProjectReference Include="..\RA.TaskSchedulerServicesImp\RA.TaskSchedulerServicesImp.csproj" />
+    <ProjectReference Include="..\RA.TaskSchedulerServices\RA.TaskSchedulerServices.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@RA.TaskSchedulerWebApi_HostAddress = http://localhost:5110
+
+GET {{RA.TaskSchedulerWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
