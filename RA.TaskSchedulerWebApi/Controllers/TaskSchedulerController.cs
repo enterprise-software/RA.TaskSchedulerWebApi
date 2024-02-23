@@ -52,7 +52,7 @@ namespace RA.TaskSchedulerWebApi.Controllers
         }
 
         [HttpGet(Name = "Shutdown")]
-        public async Task<List<TaskSchedulerResult>> ShutdownSchedulerAsync()
+        public async Task<List<TaskSchedulerResult>> GetAsync()
         {
             try
             {
