@@ -3,6 +3,7 @@ using Quartz;
 using RA.DataAccess;
 using RA.TaskSchedulerServices;
 using RA.TaskSchedulerServicesImp;
+using System.Globalization;
 
 namespace RA.TaskSchedulerWebApi
 {
@@ -30,6 +31,7 @@ namespace RA.TaskSchedulerWebApi
             {
                 Url = url,
                 CronExpression = cronExpression,
+                Timestamp = DateTime.UtcNow.ToString("o", CultureInfo.InvariantCulture),
                 Result = response,
             });
         }
